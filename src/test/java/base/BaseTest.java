@@ -188,12 +188,12 @@ public class BaseTest {
         driver.get(baseUrl);
 
     }
-    @AfterScenario
+   /* @AfterScenario
 
     public void tearDown() {
         driver.quit();
 
-    }
+    }*/
     @AfterSuite
     public void afterSuite() {
         logger.info("=========== AfterSuite ===========");
