@@ -1,7 +1,9 @@
 package base;
 
 import com.thoughtworks.gauge.AfterScenario;
+import com.thoughtworks.gauge.AfterSuite;
 import com.thoughtworks.gauge.BeforeScenario;
+import com.thoughtworks.gauge.BeforeSuite;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import com.thoughtworks.gauge.ExecutionContext;
@@ -47,7 +49,7 @@ public class BaseTest {
 
     // bu kısım her senaryodan önce tekrar çalışır.
     //deneme değişikliği
-    @BeforeScenario
+    @BeforeSuite
     public void setUp(ExecutionContext context) throws Exception {
 
         String baseUrl = "https://www.hepsiburada.com/";
@@ -192,5 +194,11 @@ public class BaseTest {
         driver.quit();
 
     }
-
+    @AfterSuite
+    public void afterSuite() {
+        logger.info("=========== AfterSuite ===========");
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
