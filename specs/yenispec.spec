@@ -61,3 +61,11 @@ Tags: trendyol
 Tags: eveshop
 * eveye git
 * Wait "1" seconds
+
+ eveshop
+-------------
+
+Tags: eveshop
+* eveye git
+* deneme
+* Wait "1" seconds
