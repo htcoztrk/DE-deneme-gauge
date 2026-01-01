@@ -65,7 +65,7 @@ Tags: eveshop
  skiptest
 -------------
 
-Tags: eveshop
+Tags: skiptest
 * eveye git
 * deneme
 * Wait "1" seconds
