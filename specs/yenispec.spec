@@ -62,7 +62,7 @@ Tags: eveshop
 * eveye git
 * Wait "1" seconds
 
- eveshop
+ skiptest
 -------------
 
 Tags: eveshop
